@@ -1,0 +1,108 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{86779220-120B-4883-A30A-4C48F4BF740C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OneUnified.IQFeed</RootNamespace>
+    <AssemblyName>OneUnified.IQFeed</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="OneUnified, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OneUnified\bin\Debug\OneUnified.dll</HintPath>
+    </Reference>
+    <Reference Include="OneUnified.SmartQuant, Version=1.0.2666.37484, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OneUnified.SmartQuant\bin\Debug\OneUnified.SmartQuant.dll</HintPath>
+    </Reference>
+    <Reference Include="OneUnified.Sockets, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OneUnified.Sockets\bin\Debug\OneUnified.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="SmartQuant, Version=1.0.2403.28188, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Apps\SmartQuant\QuantDeveloper\bin\SmartQuant.dll</HintPath>
+    </Reference>
+    <Reference Include="SmartQuant.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=844f265c18b031f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Apps\SmartQuant\QuantDeveloper\bin\SmartQuant.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="SmartQuant.FIX, Version=1.0.2403.26137, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Apps\SmartQuant\QuantDeveloper\bin\SmartQuant.FIX.dll</HintPath>
+    </Reference>
+    <Reference Include="SmartQuant.FIXData, Version=1.0.2403.26407, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Apps\SmartQuant\QuantDeveloper\bin\SmartQuant.FIXData.dll</HintPath>
+    </Reference>
+    <Reference Include="SmartQuant.Instruments, Version=1.0.2403.28189, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Apps\SmartQuant\QuantDeveloper\bin\SmartQuant.Instruments.dll</HintPath>
+    </Reference>
+    <Reference Include="SmartQuant.Providers, Version=1.0.2403.28188, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Apps\SmartQuant\QuantDeveloper\bin\SmartQuant.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="SmartQuant.Series, Version=1.0.2403.26407, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Apps\SmartQuant\QuantDeveloper\bin\SmartQuant.Series.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminPort.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="ExchangeCodes.cs" />
+    <Compile Include="FundamentalMessage.cs" />
+    <Compile Include="IQFeed.cs" />
+    <Compile Include="IQFeedDataPort.cs" />
+    <Compile Include="IQFeedLevelII.cs" />
+    <Compile Include="IQFeedMessage.cs" />
+    <Compile Include="IQFeedOptions.cs" />
+    <Compile Include="IQFeedProvider.cs" />
+    <Compile Include="LevelIDataMessage.cs" />
+    <Compile Include="LevelIIOrderBook.cs" />
+    <Compile Include="LevelIIUpdateMessage.cs" />
+    <Compile Include="LookupPort.cs" />
+    <Compile Include="NewsMessage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SummaryMessage.cs" />
+    <Compile Include="SystemMessages.cs" />
+    <Compile Include="UpdateMessage.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

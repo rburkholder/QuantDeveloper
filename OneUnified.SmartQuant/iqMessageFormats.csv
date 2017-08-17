@@ -1,0 +1,177 @@
+"MsgType","Ord","FieldName","VarName","FieldType","Note","Width","viewable"
+"F",1,"F","f","string","fundamental data type",,False
+"F",2,"Symbol","symbol","string","",54,True
+"F",3,"Exchange ID","exchangeid","string","",37,True
+"F",4,"PE","pe","float","",41,True
+"F",5,"Ave Vol","avevol","integer","",61,True
+"F",6,"52 Wk Hi","hi52wk","float","",63,True
+"F",7,"52 Wk Lo","lo52wk","float","",62,True
+"F",8,"Cal Yr Hi","hicalyr","float","",51,True
+"F",9,"Cal Yr Lo","localyr","float","",55,True
+"F",10,"Div Yield","divyield","float","",46,True
+"F",11,"Div Amt","divamt","float","",47,True
+"F",12,"Div Rate","divrate","float","",52,True
+"F",13,"Pay Date","divpaydate","date","mm/dd/yy",59,True
+"F",14,"Ex Div Date","exdivdate","date","",,False
+"F",15,"reserved","","reserved","",,False
+"F",16,"reserved","","reserved","",,False
+"F",17,"reserved","","reserved","",,False
+"F",18,"12 Mon EPS","eps12mon","float","",,False
+"F",19,"reserved","","reserved","",,False
+"F",20,"Cur Yr EPS","epscuryr","float","",56,True
+"F",21,"Nxt Yr EPS","epsnxtyr","float","",56,True
+"F",22,"5 Yr Grth","grth5yr","float","percentage",57,True
+"F",23,"Fiscal Yr End","fsclyrend","smallint","",39,True
+"F",24,"reserved","","reserved","",,False
+"F",25,"Company Name","name","string","",133,True
+"F",26,"Root Option Sym","rootopsym","string","",,False
+"F",27,"% Instituional","pcntinst","float","",38,True
+"F",28,"Beta","beta","float","",37,True
+"F",29,"Leaps","leaps","string","",,False
+"F",30,"Cur Assets","curassets","float","",63,True
+"F",31,"Cur Liability","curliable","float","",63,True
+"F",32,"Bal Sht Date","datebalsht","date","mm/dd/yy",64,True
+"F",33,"Long Term Debt","debtlong","float","",57,True
+"F",34,"Shares Out","shareout","float","",56,True
+"F",35,"reserved","","reserved","",,False
+"F",36,"Split 1","split1","string","float mm/dd/yy",87,True
+"F",37,"Split 2","split2","string","float mm/dd/yy",92,True
+"F",38,"reserved","","reserved","",,False
+"F",39,"unknown","","unknown","",,False
+"F",40,"Format Code","fmtcode","smallint","Price Format Code",36,True
+"F",41,"Precision","numdecdig","smallint","num dec digis",28,True
+"F",42,"SIC","sic","integer","",37,True
+"F",43,"Hist Volatility","histvol","float","daily, period=20",71,True
+"F",44,"Security Type","sectype","smallint","see security types",69,True
+"F",45,"Listed Market","listmkt","smallint","see Market Codes",72,True
+"F",46,"52 Week Hi Date","hi52wkdt","date","",70,True
+"F",47,"52 Week Lo Date","lo52wkdt","date","",70,True
+"F",48,"Cal Hi Date","hicaldate","date","",70,True
+"F",49,"Cal Lo Date","localdate","date","",70,True
+"N",1,"N","n","string","",,False
+"N",2,"Source","source","string","",47,True
+"N",3,"ID","storyid","integer","",,False
+"N",4,"Symbols","symbols","string",":sym::sym:",137,True
+"N",5,"DateStamp","datestamp","string","YYYYMMDD HHMMSS",,False
+"N",6,"Headline","headline","string","",547,True
+"P",1,"P","P","string","The character P",,False
+"P",2,"Symbol","symbol","string","",,True
+"P",3,"Exchange ID","exchangeid","string","see exchange codes",,True
+"P",4,"Last","last","float","",,True
+"P",5,"Change","change","float","",,True
+"P",6,"Percent Change","pcntchng","float","",,True
+"P",7,"Total Volume","totvol","integer","",,True
+"P",8,"Last Size","lastsize","integer","",,True
+"P",9,"High","high","float","",,True
+"P",10,"Low","low","float","",,True
+"P",11,"Bid","bid","float","",,True
+"P",12,"Ask","ask","float","",,True
+"P",13,"Bid Size","bidsize","integer","",,True
+"P",14,"Ask Size","asksize","integer","",,True
+"P",15,"Tick","tick","integer","""173""=Up, ""175""=Down, ""183""=No Change
+",,True
+"P",16,"Bid Tick","bidtick","integer","""173""=Up, ""175""=Down; NASDAQ Only
+",,True
+"P",17,"Range","range","float","",,True
+"P",18,"Time","time","HH:MMc","t, T, b, a, o",,True
+"P",19,"Open Int","openint","integer","Futures only",,True
+"P",20,"Open","open","float","",,True
+"P",21,"Close","close","float","",,True
+"P",22,"Spread","spread","float","",,True
+"P",23,"Strike","strike","float","options only",,True
+"P",24,"Settle","settle","float","options/comm only",,True
+"P",25,"Delay","delay","integer","num minutes delayed",,True
+"P",26,"Market Center","mktcenter","integer","see Market Center Codes",,True
+"P",27,"Restricted Code","rstrcdcode","string","'N' or 'R'",,False
+"P",28,"Net Asset Value","nav","float","Mutual Funds Only",,True
+"P",29,"Average Maturity","avemat","float","",,True
+"P",30,"7 Day Yield","yld7day","float","OTC & BB only",,True
+"P",31,"Last Trade Date","lasttrddt","date","",,True
+"P",32,"Reserved","",">","",,False
+"P",33,"Ext. Trade Last","exttrdlst","float","pre/post market trades",,True
+"P",34,"Expiration Date","expiredt","date","futures & options",,True
+"P",35,"Regional Volume","rgnlvol","integer","",,True
+"P",36,"Net Asset Value","nav2","float","",,True
+"P",37,"Ex. Trade Change","exttrdchng","float","pre/post market change",,True
+"P",38,"Ex. Trade Dif","exttrddif","float","pre/post market",,True
+"P",39,"P/E Ratio","peratio","float","real time calculated PE",,True
+"P",40,"% Off Ave. Vol.","pcntoffvol","float","",,True
+"P",41,"Bid Change","bidchng","float","change in bid since last offer",,True
+"P",42,"Ask Change","askchng","float","change in ask since last offer",,True
+"P",43,"Change Frm Open","chngopen","float","change in last since open",,True
+"P",44,"Market Open","mktopen","integer","1 open 2 closed",,True
+"P",45,"Volatility","volatility","float","real time calc volatility",,True
+"P",46,"Market Cap.","mktcap","float","real time calc ",,True
+"P",47,"Fraction Dis","frctncode","integer","see format codes",,True
+"P",48,"Decimal Prec","decprec","integer","last preceision used",,True
+"P",49,"Days to Exp.","daysexp","integer","days to contract expiry",,True
+"Q",1,"Q","Q","string","The character Q",,False
+"Q",2,"Symbol","symbol","string","",220,True
+"Q",3,"Exchange ID","exchangeid","string","see exchange codes",74,True
+"Q",4,"Last","last","float","",59,True
+"Q",5,"Change","change","float","",49,True
+"Q",6,"Percent Change","pcntchng","float","",89,True
+"Q",7,"Total Volume","totvol","integer","",82,True
+"Q",8,"Last Size","lastsize","integer","",55,True
+"Q",9,"High","high","float","",51,True
+"Q",10,"Low","low","float","",58,True
+"Q",11,"Bid","bid","float","",55,True
+"Q",12,"Ask","ask","float","",56,True
+"Q",13,"Bid Size","bidsize","integer","",50,True
+"Q",14,"Ask Size","asksize","integer","",53,True
+"Q",15,"Tick","tick","integer","""173""=Up, ""175""=Down, ""183""=No Change
+",33,True
+"Q",16,"Bid Tick","bidtick","integer","""173""=Up, ""175""=Down; NASDAQ Only
+",51,True
+"Q",17,"Range","range","float","",44,True
+"Q",18,"Time","time","HH:MMc","t, T, b, a, o",48,True
+"Q",19,"Open Int","openint","integer","Futures only",53,True
+"Q",20,"Open","open","float","",,False
+"Q",21,"Close","close","float","",,False
+"Q",22,"Spread","spread","float","",46,True
+"Q",23,"Strike","strike","float","options only",39,True
+"Q",24,"Settle","settle","float","options/comm only",,False
+"Q",25,"Delay","delay","integer","num minutes delayed",39,True
+"Q",26,"Market Center","mktcenter","string","see Market Center Codes",79,True
+"Q",27,"Restricted Code","rstrcdcode","string","'N' or 'R'",,False
+"Q",28,"Net Asset Value","nav","float","Mutual Funds Only",,False
+"Q",29,"Average Maturity","avemat","float","",,False
+"Q",30,"7 Day Yield","7dayyld","float","OTC & BB only",,False
+"Q",31,"Last Trade Date","ltd","MM/DD/YY","",,False
+"Q",32,"Reserved","",">","",,False
+"Q",33,"Ext. Trade Last","exttrdlst","float","pre/post market trades",,False
+"Q",34,"Expiration Date","expdate","MM/DD/YY","futures & options",84,True
+"Q",35,"Regional Volume","regvol","integer","",,False
+"Q",36,"Net Asset Value","nav2","float","",,False
+"Q",37,"Ex. Trade Change","exttrdchng","float","pre/post market change",,False
+"Q",38,"Ex. Trade Dif","exttrddif","float","pre/post market",,False
+"Q",39,"P/E Ratio","peratio","float","real time calculated PE",59,True
+"Q",40,"% Off Ave. Vol.","pcntoffvol","float","",83,True
+"Q",41,"Bid Change","bidchng","float","change in bid since last offer",67,True
+"Q",42,"Ask Change","askchng","float","change in ask since last offer",70,True
+"Q",43,"Change Frm Open","chngopen","float","change in last since open",98,True
+"Q",44,"Market Open","mktopen","integer","1 open 2 closed",74,True
+"Q",45,"Volatility","volatility","float","real time calc volatility",76,True
+"Q",46,"Market Cap.","mktcap","float","real time calc ",97,True
+"Q",47,"Fraction Dis","frctncode","integer","see format codes",,False
+"Q",48,"Decimal Prec","decprec","integer","last preceision used",,False
+"Q",49,"Days to Exp.","daysexp","integer","days to contract expiry",72,True
+"Q",50,"PVol","pvol","integer","prev days volume",,False
+"Q",51,"Regions","regiions","string","",,False
+"Q",52,"Open Range 1","opnrng1","float","",82,True
+"Q",53,"Close Range 1","clsrng1","float","",82,True
+"Q",54,"Open Range 2","opnrng2","float","",82,True
+"Q",55,"Close Range 2","clsrng2","float","",82,True
+"Q",56,"#Trades Today","trdstoday","integer","",85,True
+"Q",57,"Bid Time","bidtime","time","",,False
+"Q",58,"Ask Time","asktime","time","",,False
+"Q",59,"VWAP","vwap","price","volume weighted ave price",,False
+"R",1,"R","r","string","Regional Data",,False
+"R",2,"Symbol","symbol","string","",,True
+"R",3,"Exchange","exchange","string","Market Center Codes",,True
+"R",4,"Bid","bid","float","",,True
+"R",5,"BidSize","bidsize","integer","",,True
+"R",6,"BidTime","bidtime","HH;MM[a,p]","",,True
+"R",7,"Ask","ask","float","",,True
+"R",8,"AskSize","asksize","integer","",,True
+"R",9,"AskTime","asktime","HH:MM[a,p]","",,True
